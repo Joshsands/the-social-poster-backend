@@ -18,7 +18,7 @@ const UserSchema = new Schema(
             validEmail,
           )
         },
-        message: 'Please enter a valid email address!',
+        message: 'Please enter a valid email address',
       },
     },
     thoughts: [
@@ -49,3 +49,4 @@ UserSchema.virtual('friendCount').get(function () {
 const User = model('User', UserSchema)
 
 module.exports = User
+
