@@ -16,7 +16,6 @@ router
   .delete(removeThought)
 
 router
-  // /api/thoughts/:thoughtId/reactionId
   .route('/:thoughtId/:reactionId')
   .delete(removeReaction)
 

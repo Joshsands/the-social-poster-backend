@@ -14,6 +14,6 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/snb', {
   useUnifiedTopology: true,
 })
 
-mongoose.set('debug', true)
+mongoose.set('debug', false)
 
 app.listen(PORT, () => console.log(`💬 💬 💬 CONNECTED TO THE SOCIAL POSTER ON PORT:${PORT} 💬 💬 💬`))
